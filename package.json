@@ -1,0 +1,10 @@
+{
+  "name": "wecom-channel",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "channel.mjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@wecom/aibot-node-sdk": "^1.0.4"
+  }
+}
