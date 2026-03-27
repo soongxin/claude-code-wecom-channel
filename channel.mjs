@@ -29,7 +29,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const BOT_ID = process.env.WECOM_BOT_ID
 const SECRET = process.env.WECOM_SECRET
-const ENCODING_AES_KEY = process.env.WECOM_ENCODING_AES_KEY
+const ENCODING_AES_KEY = SECRET
 const PORT = parseInt(process.env.BRIDGE_PORT || '19088', 10)
 const STREAM_CHUNK = parseInt(process.env.STREAM_CHUNK || '15', 10)
 const STREAM_DELAY = parseInt(process.env.STREAM_DELAY || '200', 10)

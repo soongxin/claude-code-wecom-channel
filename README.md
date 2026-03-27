@@ -59,15 +59,14 @@ npm install
       "args": ["/Users/你的用户名/.claude/claude-code-wecom-channel/channel.mjs"],
       "env": {
         "WECOM_BOT_ID": "你的机器人ID",
-        "WECOM_SECRET": "你的机器人密钥",
-        "WECOM_ENCODING_AES_KEY": "你的消息加解密Key"
+        "WECOM_SECRET": "你的机器人密钥"
       }
     }
   }
 }
 ```
 
-三个必填参数均可在企业微信管理后台「智能机器人 → 消息推送配置」中获取。其中 `WECOM_ENCODING_AES_KEY` 是图片消息和图文混排消息的解密密钥，不配置时图片将无法正常下载解析。
+两个必填参数均可在企业微信管理后台「智能机器人 → 消息推送配置」中获取。`WECOM_SECRET` 同时用于 WebSocket 鉴权和图片消息的解密。
 
 > `~/.claude.json` 是全局配置，对所有项目生效。
 
@@ -81,7 +80,7 @@ npm install
 | `STREAM_CHUNK` | `15` | 流式回复每块字符数 |
 | `STREAM_DELAY` | `200` | 流式回复块间隔（ms） |
 
-> 注意：`WECOM_BOT_ID`、`WECOM_SECRET`、`WECOM_ENCODING_AES_KEY` 为必填项，在 MCP Server 的 `env` 中配置。
+> 注意：`WECOM_BOT_ID` 和 `WECOM_SECRET` 为必填项，在 MCP Server 的 `env` 中配置。
 
 ---
 
