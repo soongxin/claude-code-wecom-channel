@@ -1,6 +1,6 @@
-# WeCom Channel — Claude Code 企业微信接入
+# WeCom Channel — Claude Code 企业微信智能机器人接入
 
-通过此方案，可以在企业微信里直接和 Claude Code 对话，Claude 收到消息后处理并流式回复。
+将 Claude Code 接入企业微信智能机器人，直接在企微中与 Claude 对话，Claude 收到消息后处理并流式回复。
 
 ## 亮点
 
@@ -9,7 +9,6 @@
 - **图文皆可输入** — 直接发截图给 Claude，自动解密下载并识别，指哪打哪
 - **通知 Hook，任务完成主动提醒** — Claude 进入等待时自动推送企微消息，不用一直切回来看
 - **权限审批卡片** — Claude 执行敏感操作前推送交互卡片，一键允许或拒绝，手机也能审批
-- **多人共用，按用户隔离** — 同一个机器人可供团队使用，消息按 userid 路由，互不干扰
 - **零侵入接入** — 纯 MCP Server 实现，不改 Claude Code 本身，升级 Claude 不受影响
 
 ---
