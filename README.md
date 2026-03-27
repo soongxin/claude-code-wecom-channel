@@ -28,15 +28,15 @@
 将本仓库克隆到推荐路径：
 
 ```bash
-git clone https://github.com/soongxin/claude-code-wecom-channel.git ~/.claude/wecom-channel
-cd ~/.claude/wecom-channel
+git clone https://github.com/soongxin/claude-code-wecom-channel.git ~/.claude/claude-code-wecom-channel
+cd ~/.claude/claude-code-wecom-channel
 npm install
 ```
 
 目录结构：
 
 ```
-~/.claude/wecom-channel/
+~/.claude/claude-code-wecom-channel/
 ├── channel.mjs      # 主程序
 └── package.json     # 依赖声明
 ```
@@ -56,7 +56,7 @@ npm install
   "mcpServers": {
     "wecom": {
       "command": "node",
-      "args": ["/Users/你的用户名/.claude/wecom-channel/channel.mjs"],
+      "args": ["/Users/你的用户名/.claude/claude-code-wecom-channel/channel.mjs"],
       "env": {
         "WECOM_BOT_ID": "你的机器人ID",
         "WECOM_SECRET": "你的机器人密钥"
